@@ -15,7 +15,7 @@
         <header class="cabecera">
             <div class="contenedor">
                 <a href="./">
-                    <img class="logo" src="imagenes/prueba.png" alt="Logotipo de mi proyecto">
+                    <img class="logo" src="imagenes/potrero_digital_2021_edited.webp" alt="Logotipo de mi proyecto">
                 </a>
                 <nav class="navegacion">
                     <ul class="navegacion__lista"> <!-- Flex -->
@@ -27,6 +27,9 @@
                         </li>
                         <li>
                             <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a class="navegacion__enlace" href="#cursos">Cursos</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,26 +45,32 @@
             </section>
         </main>
         
-        <footer>
-            <h2>Proyecto Potrero Digital</h2>
+        <footer class="footer">
+            <h2 class="footer__titulo">Proyecto Potrero Digital</h2>
     
-            <p>Whatsapp: <a href="">+54 11 2222 5555</a></p>
+            <p>Whatsapp: <a class="footer__enlace" href="">+54 11 2222 5555</a></p>
             
-            <h3>Enlaces de interes</h3>
-            <ul>
-                <li><a href="https://www.argentina.gob.ar/" target="_blank">Pagina Oficial del Gobierno Argentino</a></li>
-                <li><a href="https://www.potrerodigital.org/" target="_blank">Pagina Oficial de Potrero Digital</a></li>
-            </ul>
-    
-            <h3>Redes sociales</h3>
-            <ul>
-                <li><a href="https://twitter.com/es/tos" target="_blank">Twitter</a></li>
-                <li><a href="" target="_blank">Instagram</a></li>
-                <li><a href="" target="_blank">Facebook</a></li>
-            </ul>
+            <div class="footer__flex-padre">
+                <div>
+                    <h3 class="footer__subtitulo">Enlaces de interes</h3>
+                    <ul>
+                        <li><a class="footer__enlace" href="https://www.argentina.gob.ar/" target="_blank">Pagina Oficial del Gobierno Argentino</a></li>
+                        <li><a class="footer__enlace" href="https://www.potrerodigital.org/" target="_blank">Pagina Oficial de Potrero Digital</a></li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h3 class="footer__subtitulo">Redes sociales</h3>
+                    <ul>
+                        <li><a class="footer__enlace" href="https://twitter.com/" target="_blank">Twitter</a></li>
+                        <li><a class="footer__enlace" href="https://instragram.com/" target="_blank">Instagram</a></li>
+                        <li><a class="footer__enlace" href="https://facebook.com/" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
     
             <div>
-                <p>Derechos Reservados Leonardo Lovera - Hecho con amor 2021</p>
+                <p class="footer__copy">Derechos Reservados Leonardo Lovera - Hecho con amor 2021</p>
             </div>
         </footer>
     </body>

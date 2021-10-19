@@ -15,62 +15,24 @@
             box-sizing: border-box;
         }
 
+        /* Estilos se van aplicar para todos los dispositivos (Escritorio) */
+
         body {
-            height: 800px;
-        }
-        .caja1 {
-            /* text-align: center; */
-            font-size: 50px;
-            font-style: normal;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            text-decoration: line-through;
-            cursor: pointer;
-            color: aqua;
-            /* background-color: red; */
-            /* background-color: #ff0000; */
-            background-color: rgb(255, 0, 0);
-
-            display: block; /* Por defecto hay dos tipos inline o block */
-            /* Propiedades presentes del modelo de caja */
-            /* width: 100%; */
-            /* max-width: 700px; */
-            /* margin: 0 auto; */
-            height: 300px;
-            /* padding: 16px; */
-            padding-top: 16px;
-            padding-left: 32px;
-            padding-bottom: 60px;
-            padding-right: 100px;
-            /* margin-bottom: 32px; */
-            border: 5px solid black;
-    
-            background-image: url('imagenes/prueba.png');
-            background-repeat: no-repeat;
-            background-position: center;
+            background-color: red;
         }
 
-        a {
-            background-color: yellow;
-            color: black;
+        /* Medias Querys */
+
+        @media (max-width: 998px) {
+            /* Estilos se van aplicar para los dispositivos de vistas mas pequeñas */
+            body {
+                background-color: green;
+            }
         }
 
-        img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-        }
     </style>
 </head>
 <body>
-    <div class="caja1">Caja 1</div>
-    <a href="">Enlace 1 agrego mas contenido </a>
-    <span>Elemento span se de tipo inline</span>
-    <div class="caja2">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-GHKp0feIaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
 
-    <img src="imagenes/customer-2.jpg" alt="">
 </body>
 </html>

@@ -17,7 +17,7 @@
     <header class="cabecera">
         <div class="contenedor">
             <a href="./">
-                <img class="logo" src="imagenes/prueba.png" alt="Logotipo de mi proyecto">
+                <img class="logo" src="imagenes/potrero_digital_2021_edited.webp" alt="Logotipo de mi proyecto">
             </a>
             <nav class="navegacion">
                 <ul class="navegacion__lista"> <!-- Flex -->
@@ -29,6 +29,9 @@
                     </li>
                     <li>
                         <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="navegacion__enlace" href="#cursos">Cursos</a>
                     </li>
                 </ul>
             </nav>
@@ -43,8 +46,9 @@
             <div class="contenedor">
                 <div class="contenido">
                     <h2 class="tituloBanner1">Bienvenidos xD</h2>
-                    <p class="parrafoBanner1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, aut.</p>
-                    <a class="boton" href="">Boton o Enlace</a>
+                    <p class="parrafoBanner1">Potrero Digital es una red de centros de aprendizajes de oficios digitales orientada a la integración social.</p>
+                    <p class="parrafoBanner1">Brindamos formación en oficios digitales a personas mayores de 16 años con barreras socioeconómicas, y los vinculamos con las oportunidades de trabajo del mercado laboral digital.</p>
+                    <a class="boton" href="https://www.compromiso.org/" target="_blank">Compromiso</a>
                 </div>
                 <div class="contenido">
                     <img class="banner1" src="imagenes/img-banner-1.svg" alt="">
@@ -52,28 +56,31 @@
             </div>
         </section>
         <!-- Seccion 3 -->
-        <section class="nuestros-servicios"> 
-            <h2 class="nuestros-servicios__titulo">Servicios</h2>
+        <section class="nuestros-servicios" id="cursos"> 
+            <h2 class="nuestros-servicios__titulo">Cursos</h2>
             <div class="servicios">
                 <a href="">
                     <div class="servicio">
                         <span class="jam jam-bar-chart servicio__icono"></span>
-                        <h3 class="servicio__titulo">Servicio 1</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati rerum voluptate hic, libero ex blanditiis corrupti totam nisi, soluta dignissimos, reprehenderit veniam ut laboriosam nostrum exercitationem animi omnis quaerat molestias?</p>
+                        <h3 class="servicio__titulo">FrontEnd</h3>
+                        <p>Martes a las 18 hs</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, optio.</p>
                     </div>
                 </a>
                 <a href="">
                     <div class="servicio">
                         <span class="jam jam-cogs servicio__icono"></span>
-                        <h3 class="servicio__titulo">Servicio 2</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati rerum voluptate hic, libero ex blanditiis corrupti totam nisi, soluta dignissimos, reprehenderit veniam ut laboriosam nostrum exercitationem animi omnis quaerat molestias?</p>
+                        <h3 class="servicio__titulo">HSE</h3>
+                        <p>Miercoles a las 18 hs</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, optio.</p>
                     </div>
                 </a>
                 <a href="">
                     <div class="servicio">
                         <span class="jam jam-computer servicio__icono"></span>
-                        <h3 class="servicio__titulo">Servicio 3</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati rerum voluptate hic, libero ex blanditiis corrupti totam nisi, soluta dignissimos, reprehenderit veniam ut laboriosam nostrum exercitationem animi omnis quaerat molestias?</p>
+                        <h3 class="servicio__titulo">Ingles</h3>
+                        <p>Lunes a las 16 hs</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, optio.</p>
                     </div>
                 </a>
             </div>
@@ -86,30 +93,38 @@
         </section>
 
         <section class="fijar">
-            <a class="fijar__enlace" href="https://api.whatsapp.com/send?phone=5493516342592" target="_blank"><img src="imagenes/whatsapp.svg" alt="logo de whatsapp"></a>
+            <a class="fijar__enlace" href="https://api.whatsapp.com/send?phone=5493516342592" target="_blank">
+                <img class="fijar__img" src="imagenes/whatsapp.svg" alt="logo de whatsapp">
+            </a>
         </section>
     </main>
 
-    <footer>
-        <h2>Proyecto Potrero Digital</h2>
+    <footer class="footer">
+        <h2 class="footer__titulo">Proyecto Potrero Digital</h2>
 
-        <p>Whatsapp: <a href="">+54 11 2222 5555</a></p>
+        <p>Whatsapp: <a class="footer__enlace" href="">+54 11 2222 5555</a></p>
         
-        <h3>Enlaces de interes</h3>
-        <ul>
-            <li><a href="https://www.argentina.gob.ar/" target="_blank">Pagina Oficial del Gobierno Argentino</a></li>
-            <li><a href="https://www.potrerodigital.org/" target="_blank">Pagina Oficial de Potrero Digital</a></li>
-        </ul>
-
-        <h3>Redes sociales</h3>
-        <ul>
-            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-            <li><a href="https://instragram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
-        </ul>
+        <div class="footer__flex-padre">
+            <div>
+                <h3 class="footer__subtitulo">Enlaces de interes</h3>
+                <ul>
+                    <li><a class="footer__enlace" href="https://www.argentina.gob.ar/" target="_blank">Pagina Oficial del Gobierno Argentino</a></li>
+                    <li><a class="footer__enlace" href="https://www.potrerodigital.org/" target="_blank">Pagina Oficial de Potrero Digital</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3 class="footer__subtitulo">Redes sociales</h3>
+                <ul>
+                    <li><a class="footer__enlace" href="https://twitter.com/" target="_blank">Twitter</a></li>
+                    <li><a class="footer__enlace" href="https://instragram.com/" target="_blank">Instagram</a></li>
+                    <li><a class="footer__enlace" href="https://facebook.com/" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
 
         <div>
-            <p>Derechos Reservados Leonardo Lovera - Hecho con amor 2021</p>
+            <p class="footer__copy">Derechos Reservados Leonardo Lovera - Hecho con amor 2021</p>
         </div>
     </footer>
 </body>

@@ -55,8 +55,8 @@ ul {
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
+    /* width: 200px; */
+    height: 20px;
 }
 
 .navegacion {
@@ -74,7 +74,11 @@ ul {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    transition: all 1s;
+}
 
+.navegacion__enlace:hover {
+    color: #D4DA3C;
 }
 
 /* Hero */
@@ -83,7 +87,7 @@ ul {
     background-color: red;
     height: 600px;
     width: 100%;
-    background-image: url('../imagenes/patrocinadores.jpg');
+    background-image: url('../imagenes/patron-potrero.webp');
     background-size: cover;
     background-attachment: fixed;
     /* text-align: right; */ /* Ajustamos el texto como cuando estamos en Word */
@@ -102,14 +106,14 @@ ul {
     padding-left: 16px;
     padding-right: 16px; */
     padding: 16px;
-    border: 10px solid red;
+    border: 10px solid #D4DA3C;
     font-size: 40px;
 }
 
 /* Main Seccion */
 
 .main-seccion {
-    background-color: #C6083E;
+    background-color: #73C7D5;
     padding-top: 64px;
     padding-bottom: 64px;
     padding-left: 32px;
@@ -135,7 +139,7 @@ ul {
 .parrafoBanner1 {
     font-weight: 100;
     margin-bottom: 32px; /* Separar elemento utilizo margin */
-    color: white;
+    color: black;
 }
 
 .boton {
@@ -157,7 +161,7 @@ ul {
 .nuestros-servicios__titulo {
     text-align: right;
     font-size: 48px;
-    color: orange;
+    color: #D4DA3C;
     margin-bottom: 64px;
 }
 
@@ -187,7 +191,7 @@ ul {
 
 .servicio__icono {
     font-size: 50px;
-    background-color: #C6083E;
+    background-color: #D4DA3C;
     color: white;
     border-radius: 50%;
     padding: 10px;
@@ -215,7 +219,7 @@ ul {
     position: absolute; /* El elemento pierde su ancho por defecto que es 100% */
     bottom: 0;
     z-index: 10;
-    background-color: orange;
+    background-color: #D4DA3C;
     width: 100%;
     opacity: 0.8;
 }
@@ -230,12 +234,49 @@ ul {
 
 }
 
-/* Fijar Elemento a la pantalla */
+/* Footer */
+
+.footer {
+    background-color: #323232;
+    color: white;
+    padding: 32px;
+    padding-bottom: 64px;
+}
+
+.footer__titulo {
+    color: #D4DA3C;
+    margin-bottom: 20px;
+}
+
+.footer__subtitulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__copy {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer__flex-padre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__enlace {
+    color: white;
+}
+
+
+/* Fijar Elemento a la pantalla (Whatsapp) */
 
 .fijar {
     position: fixed;
     bottom: 32px;
     right: 32px;
+    z-index: 1000;
+    
 }
 
 .fijar__enlace {
@@ -245,5 +286,57 @@ ul {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 20px;
-    z-index: 1000;
+    /* box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5); 4 Valores */
+    transition: all 1s;
+}
+
+.fijar__enlace:hover {
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.fijar__img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Medias Querys */
+
+@media (max-width: 768px) {
+    .cabecera .contenedor {
+        flex-direction: column;
+    }
+
+    .main-seccion .contenedor {
+        flex-direction: column;
+    }
+
+    .main-seccion .contenido {
+        width: 100%;
+    }
+
+    .main-seccion .banner1 {
+        width: 100%;
+    }
+
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__flex-padre {
+        flex-direction: column;
+    }
+
+    .titulo-principal {
+        font-size: 28px;
+    }
+
+    .tituloBanner1 {
+        font-size: 28px;
+    }
+
+    .navegacion__lista {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 }
