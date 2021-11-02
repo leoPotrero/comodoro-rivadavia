@@ -27,6 +27,7 @@ body {
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .cabecera {
@@ -68,6 +69,8 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .navegacion__enlace {
@@ -297,6 +300,23 @@ ul {
 .fijar__img {
     width: 30px;
     height: 30px;
+}
+
+.productos-servicios, .galeria, .formulario {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.productos-servicios__titulo, .galeria__titulo, .formulario__titulo {
+    font-size: 40px;
+    font-style: italic;
+    text-align: right;
+    margin-bottom: 32px;
+}
+
+
+.iframe {
+    width: 100%;
 }
 
 /* Medias Querys */
